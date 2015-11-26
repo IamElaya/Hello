@@ -1,0 +1,50 @@
+#header {
+  text-align: center;
+}
+
+.headerPic {
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px;
+}
+
+#ingredients {
+  padding: 10px;
+}
+
+#method {
+  padding: 10px;
+}
+
+.methodPic {
+  margin: 10px;
+  border-radius: 30px;
+}
+
+li {
+  padding: 3px;
+}
+
+img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+}
+
+img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
+
+.
