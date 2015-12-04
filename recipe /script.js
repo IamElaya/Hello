@@ -1,13 +1,26 @@
 $(document).ready(function(){
 	
-$('#ingredients > li').click(function() {
+$('#ingredientslist > li').click(function() {
 		$(this).toggleClass('highlighted');
 	});
 
-$('button').click(function(){
-	 $('.headerPic, .methodPic').toggle('slow');
+$('#hide').click(function(){
+	 $('.headerPic').toggle('slow');
 });
 
+$('#directionbutton').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $('#method').offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 
 });
+
 
